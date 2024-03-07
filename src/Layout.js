@@ -27,7 +27,7 @@ const Layout = () => {
                 Galeria
               </Link>
               <Link className="nav-item nav-link btnMenu" to={"/contact"}>
-                Konatkt
+                Kontakt
               </Link>
             </Nav>
           </Navbar.Collapse>
