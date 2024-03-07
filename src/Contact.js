@@ -34,7 +34,7 @@ const Contact = () => {
                 </section>
                 <section className="media">
                     <h3>MEDIA SPOŁECZNOŚCIOWE</h3> <hr />
-                    <a className="btnLink" href="https://www.facebook.com/profile.php?id=100086287315254&sk=about"><b>Facebook</b></a>
+                    <a className="btnLink" href="https://www.facebook.com/profile.php?id=100086287315254" target="blank"><b>Facebook</b></a>
                 </section>
                 <section>
                     <h3>LOKALIZACJA</h3><hr />
