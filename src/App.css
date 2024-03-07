@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --secondary-color: #b89a81;
+  --background-color: #d7b899;
+  --text-color: #F8F8F8;
+  --background-btn: #f5f2f1;
+  --radius-btn: #DECBBB;
+  --text-btn: #2c2b2a;
+  --backgorund-colorv2:#a17f64a4;
+  --shadow-color: #2b2826;
+}
+.positionCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#author{
+  font-size: 12px;
+}
+.menuColor{
+  background-color: var(--background-color);
+}
+footer{
+  height: 14vh;
+  background-color: var(--background-color);
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#boxFooterInfo{
+flex-direction: column;
+display: flex;
+justify-content: center;
+
+}
+.homeBox{
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.712)), url(./Gallery/photoHome.jpg);
+  background-size: cover;
+  height: 84vh;
+  flex-direction: column;
+  color: var(--text-color);
+  box-shadow: 2px 0 14px 2px var(--background-color);
+}
+.homeText{
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+.homeBox > img{
+  width: 100%;
+}
+h1{
+  font-size: 48px;
+  padding: 10px 0;
+}
+#boxBtn{
+  margin-top: 3%;
+}
+.btnMenu {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
+}
+.btnMenu:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-btn);
+  transition: width 1s ease;
+}
+.btnMenu:hover:before {
+  width: 100%;
+}
+
+.homeBox:before{
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: width 1s ease;
+}
+.homeBox:hover:before {
+  width: 95%;
+}
+.homeBox::after{
+  content: '';
+  position: absolute;
+  bottom: 85%;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-color);
+  transition: width 1s ease;
+}
+.homeBox:hover::after {
+  width: 95%;
+}
+.homeBtn {
+  background-color: #0000002a;
+  color: white;
+  border: 3px solid white;
+  padding: 12px 28px;
+  animation: anim 2s ease infinite;
+  cursor: pointer;
+  margin: 25px;
+  padding: 10px 35px;
+}
+
+@keyframes anim {
+  50% {
+      transform: translateY(-4px);
+  }
+}
+.titlePage{
+  padding: 0 40px;
+  font-size: 24px;
+}
+.btnLink{
+  text-decoration: none;
+  color: var(--text-btn);
+  transition: all 0.5s;
+}
+.btnLink:hover{
+  color: var(--text-color);
+  transition: all 0.5s;
+}
+#titleOffer{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.712)), url(./Gallery/photoOffer.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+#boxOffer{
+  flex-direction: column;
+  width: 100%;
+}
+.boxesOffer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap-reverse;
+  gap: 70px;
+  width: 100%;
+  transition: all 1s;
+  margin: 4% 0;
+}
+.anhor{
+  text-decoration: none;
+  color: var(--text-btn);
+}
+.offer{
+  height: 60vh;
+  width: 18%;
+  flex-direction: column;
+  background-color: var(--text-color);
+  text-align: center;
+  padding: 0 2%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2),
+              inset 0 3px 0 rgba(0, 0, 0, 0.02);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.offer hr {
+  width: 80%;
+}
+.offer > h2{
+  padding-top: 12%;
+}
+.offer:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.boxesOffer:hover > :not(:hover){
+opacity: .4;
+transition: all 1s;
+}
+.animBox{
+  width: 50%;
+  height: 100%;
+  background-color: var(--backgorund-colorv2);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  flex-direction: column;
+}
+.descriptiveText{
+  width: 59%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 10%;
+  align-items: flex-start;
+  color: black;
+  line-height: 35px;
+}
+.descriptiveText > h1{
+  font-weight: bold;
+  font-size: 74px;
+  text-shadow: -2px 1px 3px var(--secondary-color);
+}
+.boxGallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 90px 0;
+  text-align: center;
+}
+.carouselGallery{
+  width: 60%;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+.photoGallery{
+  max-width: 100%;
+  height: 500px;
+  margin: auto;
+}
+#galleryTitle{
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.712)), url(./Gallery/photoGallery.jpg);
+  background-size: cover;
+}
+#contact{
+  width: 100%;
+}
+#mainContactBox{
+width: 100%;
+padding: 5% 0;
+background-color: var(--backgorund-colorv2);
+flex-direction: column;
+text-align: center;
+gap: 50px;
+}
+#contactText{
+width: 40%;
+
+}
+.contactMedia{
+  flex-direction: column;
+  line-height: 30px;
+  margin: 0 50px;
+
+}
+td{
+ padding: 0 20px;
+}
+#positionContact{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+iframe{
+  width: 600px;
+  box-shadow: 0 2px 9px black;
+}
+b{
+  padding: 10px;
+}
+.media{
+  margin-bottom: 50px;
+  display: flex;
+  position: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .media hr {
+    width: 80%;
+  }
+@media screen and (max-width: 450px) and (orientation: portrait) {
+  .titlePage{
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .homeBox > h1{
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+  }
+  .homeText{
+    width: 80%;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  #boxBtn{
+    flex-wrap: wrap;
+  }
+  .homeBtn {
+    margin: 10px;
+    padding: 5px 20px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  #boxFooterInfo{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    .animBox{
+      width: 90%;
+    }
+    .descriptiveText{
+      width: 60%;
+      font-size: 14px;
+      line-height: normal;
+    }
+    .descriptiveText > h1{
+      font-size: 48px;
+    }
+    .boxesOffer{
+      gap: 40px;
+      padding: 30px 0;
+    }
+    .offer{
+      width: 60%;
+      padding: 0 9%;
+      font-size: 16px;
+      height: 380px;
+    }
+    .carouselGallery{
+      width: 90%;
+    }
+    .photoGallery{
+      height: 230px;
+    }
+    h1{
+      font-size: 36px;
+    }
+    #contactText{
+    width: 80%;
+    }
+    td{
+     padding: 0 5px;
+    }
+    #positionContact{
+      flex-direction: column;
+    }
+    iframe{
+      width: 250px;
+    }
+    .contactMedia{
+      padding: 40px 0;
+      font-size: 14px;
+    }
+
+    .homeBox::after,.homeBox:before{
+      display: none;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1024px) and (orientation: portrait) {
+  .titlePage{
+    padding: 0 20px;
+    font-size: 24px;
+  }
+  .homeBox > h1{
+    font-size: 48px;
+  }
+  .homeText{
+    width: 60%;
+    font-size: 24px;
+  }
+  .homeBtn {
+    font-size: 18px;
+   margin: 25px 10px;
+  }
+  footer{
+    height: 15vh;
+    font-size: 20px;
+  }
+  .btnMenu {
+  font-size: 20px;
+  }
+    .animBox{
+      width: 70%;
+    }
+    .descriptiveText{
+      width: 60%;
+      font-size: 20px;
+      line-height: normal;
+    }
+    .descriptiveText > h1{
+      font-size: 59px;
+    }
+    .boxesOffer{
+      gap: 100px;
+      padding: 50px 0;
+    }
+    .offer{
+      width: 35%;
+      padding: 0 5%;
+      font-size: 20px;
+      height: 500px;
+    }
+    .carouselGallery{
+      width: 80%;
+    }
+    .photoGallery{
+      height: 430px;
+    }
+    h1{
+      font-size: 54px;
+    }
+    #contactText{
+    width: 50%;
+    font-size: 24px;
+    }
+    #positionContact{
+      flex-direction: column;
+    }
+    iframe{
+      width: 500px;
+    }
+    .contactMedia{
+      padding: 40px 0;
+    }
+
+    #mainContactBox{
+      font-size: 24px;
+    }
+}
+@media screen and (min-width: 512px) and (max-width: 580px){
+  .photoGallery{
+    height: 290px;
+}
+h1{
+  font-size: 40px;
+}
+.descriptiveText{
+  width: 60%;
+  font-size: 16px;
+  line-height: normal;
+}
+.descriptiveText > h1{
+  font-size: 48px;
+}
+}
+@media screen and (max-width: 280px) and (orientation: portrait) {
+.titlePage{
+  font-size: 12px;
+}
+  .contactMedia{
+font-size: 14px;
+margin: 0;
+    }
+    .photoGallery{
+      height: 200px;
+  }
+  .descriptiveText > h1{
+    font-size: 36px;
+  }
+
+}
+@media screen and (max-width: 935px) and (orientation: landscape) {
+  .titlePage{
+    font-size: 20px;
+  }
+  .homeBox > h1{
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+  }
+  .homeText{
+    width: 80%;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .homeBtn {
+    margin: 10px;
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+  footer{
+    height: 29vh;
+    font-size: 14px;
+  }
+
+    .animBox{
+      width: 80%;
+    }
+    .descriptiveText{
+      width: 60%;
+      font-size: 16px;
+      line-height: normal;
+    }
+    .descriptiveText > h1{
+      font-size: 48px;
+    }
+    .boxesOffer{
+      gap: 90px;
+      padding: 50px 0;
+    }
+    .offer > h2{
+      font-size: 20px;
+    }
+    .offer{
+      width: 28%;
+      padding: 2% 2%;
+      height: 350px;
+      font-size: 14px;
+    }
+    .carouselGallery{
+      width: 65%;
+    }
+    .photoGallery{
+      height: 380px;
+    }
+    h1{
+      font-size: 30px;
+    }
+    #contactText{
+    width: 70%;
+    }
+    #positionContact{
+      flex-direction: column;
+    }
+    iframe{
+      width: 500px;
+    }
+    .contactMedia{
+      padding: 40px 0;
+      font-size: 14px;
+    }
+
+    .homeBox::after,.homeBox:before{
+      display: none;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 745px) and (orientation: landscape) {
+  .photoGallery{
+    height: 300px;
+  }
+  #titleOffer{
+    height: 150vh;
+  }
+  #galleryTitle{
+    height: 150vh;
+  }
+
+}
+@media screen and (min-width: 450px) and (max-width: 750px){
+.homeBox > h1{
+  text-align: center;
+}
+.carouselGallery{
+   width: 70%; /*Tu */
+}
+}
+@media screen and (min-width: 450px) and (max-width: 750px) and  (orientation: landscape) {
+.offer > p{
+  font-size: 13px;
+}
+
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1450px) and (orientation: landscape) {
+  .titlePage{
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  .homeBox > h1{
+    text-align: center;
+    font-size: 48px;
+  }
+  .homeText{
+    width: 60%;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  footer{
+    font-size: 16px;
+  }
+  .homeBtn {
+    margin: 20px;
+    padding: 10px 40px;
+    font-size: 20px;
+  }
+
+    .descriptiveText{
+      width: 64%;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .descriptiveText > h1{
+      font-size: 54px;
+    }
+    .boxesOffer{
+      gap: 90px;
+      padding: 50px 0;
+    }
+    .offer{
+      width: 30%;
+      padding: 0 4%;
+      font-size: 20px;
+      height: 390px;
+    }
+    .carouselGallery{
+      width: 64%;
+    }
+    .photoGallery{
+      height: 540px;
+    }
+    h1{
+      font-size: 48px;
+    }
+    #contactText{
+    width: 50%;
+    font-size: 24px;
+    }
+    iframe{
+      width: 600px;
+    }
+    .contactMedia{
+      padding: 40px 0;
+      font-size: 20px;
+    }
+    .media{
+      font-size: 24px;
+    }
+    .homeBox::after,.homeBox:before{
+      display: none;
+    }
+    .btnMenu{
+      font-size: 20px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1080px) and (orientation: landscape) {
+    .carouselGallery{
+      width: 64%;
+    }
+    .photoGallery{
+      height: 400px;
+  }
+  .offer{
+  height: 420px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1030px) and (orientation: portrait) {
+  .photoGallery{
+    height: 500px;
+}
+.offer{
+  height: 400px;
+}
+}
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .titlePage{
+    font-size: 16px;
+  }
+  .btnMenu{
+    font-size: 16px;
+  }
+  .homeBox > h1{
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+  }
+  .homeText{
+    width: 80%;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .homeBtn {
+    margin: 10px;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+  /* footer{
+    height: 20vh;
+    font-size: 14px;
+  } */
+    .descriptiveText{
+      width: 60%;
+      font-size: 16px;
+      line-height: normal;
+    }
+    .descriptiveText > h1{
+      font-size: 48px;
+    }
+    .boxesOffer{
+      gap: 80px;
+      padding: 40px 0;
+    }
+    /* .offer{
+      width: 30%;
+      padding: 0 4%;
+      font-size: 16px;
+      height: 300px;
+    } */
+    .offer > h2{
+      font-size: 24px;
+    }
+    h1{
+      font-size: 36px;
+    }
+    #contactText{
+    width: 50%;
+    font-size: 16px;
+    }
+
+    #positionContact{
+      flex-direction: column;
+    }
+    iframe{
+      width: 500px;
+    }
+    .contactMedia{
+      padding: 40px 0;
+      font-size: 16px;
+    }
+
+}
+@media screen and (min-width: 1600px){
+  .carouselGallery{
+    width: 60%;
+  }
+  .photoGallery{
+    height: 700px;
+  }
+      .offer{
+      width: 28%;
+      padding: 0 2%;
+      font-size: 16px;
+      height: 300px;
+    }
+}
