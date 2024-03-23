@@ -8,9 +8,11 @@ const Layout = () => {
     <div className="appContainer">
       <header>
         <Navbar className="menuColor" expand="lg">
+         <Link to={"/"} id="titleBtn">
           <Navbar.Brand className="titlePage">
-            AKZ - Meble wykonane z pasją
+           AKZ - Meble wykonane z pasją
           </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             className="justify-content-end"
@@ -55,7 +57,7 @@ const Layout = () => {
         <div className="positionCenter">
           <span id="author">
             Autor strony: <br />
-            Julia Bydłosz
+          <a href="https://www.facebook.com/profile.php?id=100005483293929" target="_blank" id="socialsOfAuthor">Julia Bydłosz</a>  
           </span>
         </div>
       </footer>
